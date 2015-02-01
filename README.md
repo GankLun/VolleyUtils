@@ -1,4 +1,4 @@
-# VolleyUtils for Android
+﻿# VolleyUtils for Android
 ![Screenshot](https://raw.githubusercontent.com/GankLun/VolleyUtils/master/volley.jpg)  
 This project aims to provide a volley wrapper widget for Android. you just call a static method in VolleyUtils with one line code to make  http request and load image from website done.
 ##Features  
@@ -16,7 +16,7 @@ This project aims to provide a volley wrapper widget for Android. you just call 
 ## More Introduction  
 If you want to learn more about VolleyUtils,please see my csdn blog some days later.  
 ## License     
-    Copyright 2011, 2012 GankLun
+    Copyright 2014, 2015 GankLun
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
