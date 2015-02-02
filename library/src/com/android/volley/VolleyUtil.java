@@ -66,9 +66,17 @@ public class VolleyUtil {
 		requestQueue.add(request);
 	}
 
-	public static void cancelAll(Object tag) {
+	public static void cancelAllByTag(Object tag) {
 		if (null != requestQueue) {
-			requestQueue.cancelAll(tag);
+			if (tag != null) {
+				requestQueue.cancelAll(tag);
+			}
+		}
+	}
+
+	public static void cancelAll(Context context) {
+		if (null != requestQueue) {
+			requestQueue.cancelAll(context);
 		}
 	}
 
@@ -120,8 +128,7 @@ public class VolleyUtil {
 			public Map<String, String> getHeaders() throws AuthFailureError {
 				Map<String, String> headers = new HashMap<String, String>();
 				if (!isLogin) {
-					headers.put(GlobConstant.COOKIE,
-							cookieValue);
+					headers.put(GlobConstant.COOKIE, cookieValue);
 					return headers;
 				}
 				return super.getHeaders();
@@ -164,8 +171,7 @@ public class VolleyUtil {
 			public Map<String, String> getHeaders() throws AuthFailureError {
 				Map<String, String> headers = new HashMap<String, String>();
 				if (!isLogin) {
-					headers.put(GlobConstant.COOKIE,
-							cookieValue);
+					headers.put(GlobConstant.COOKIE, cookieValue);
 					return headers;
 				}
 				return super.getHeaders();
@@ -213,8 +219,7 @@ public class VolleyUtil {
 			public Map<String, String> getHeaders() throws AuthFailureError {
 				Map<String, String> headers = new HashMap<String, String>();
 				if (!isLogin) {
-					headers.put(GlobConstant.COOKIE,
-							cookieValue);
+					headers.put(GlobConstant.COOKIE, cookieValue);
 					return headers;
 				}
 				return super.getHeaders();
