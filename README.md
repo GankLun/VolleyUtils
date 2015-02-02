@@ -14,7 +14,7 @@ This project aims to provide a volley wrapper widget for Android. you just call 
 * VolleyUtil.sendJsonRequest(Context context, int method,	String url, String jsonStr, Object tag, Class<T> clazz,final HttpBackListener<T> listener, final boolean isLogin,final String cookieValue)  
 
 ## More Introduction  
-If you want to learn more about VolleyUtils,please see my csdn blog some days later.  
+If you want to learn more about VolleyUtils,please see my csdn blog [Volley封装，一行代码搞定http请求](http://blog.csdn.net/ganklun/article/details/43372355).  
 ## License     
     Copyright 2014, 2015 GankLun
     Licensed under the Apache License, Version 2.0 (the "License");
