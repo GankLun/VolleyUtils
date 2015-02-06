@@ -1,6 +1,7 @@
 package com.android.volley;
 
 import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.util.VolleyUtil;
 
 import android.app.Activity;
 import android.os.Bundle;
