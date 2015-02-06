@@ -1,4 +1,4 @@
-package com.android.volley;
+package com.android.volley.cache;
 
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;

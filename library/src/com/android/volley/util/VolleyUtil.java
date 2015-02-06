@@ -1,4 +1,4 @@
-package com.android.volley;
+package com.android.volley.util;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,9 +10,19 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import com.alibaba.fastjson.JSON;
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
 import com.android.volley.Request.Method;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
+import com.android.volley.VolleyError;
+import com.android.volley.cache.BitmapCache;
+import com.android.volley.constant.GlobConstant;
+import com.android.volley.listener.HttpBackListener;
+import com.android.volley.request.JsonRequest;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageLoader.ImageListener;
 import com.android.volley.toolbox.JsonObjectRequest;
